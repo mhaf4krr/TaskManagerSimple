@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Task Manager</h1>
+  <form action="#">
+    
+    <label for="task-name">Task Name</label>
+    <input type="text" name='task-name' id='text-field-1'><br>
+    <label for="select-priority">Task Priority</label>
+    <select name="select-priority" id="select-priority">
+      <option value=1>High</option>
+      <option value=2 selected>Intermediate</option>
+      <option value=3>Low</option>
+    </select><br>
+    <button type="submit">New Task</button>
+  </form>
+  <ul class="task-lists">
+    <h2>Tasks to Do:</h2>
+  <li class="tasks-lists-item">Take Shower <a class='delete-item' href="#">   (Remove Task) </a></li>
+  <button class='clear-tasks'>Clear All</button>
+  </ul>
+
+  
+  <ul class="tasks-done">
+    <H2>Tasks Accompalished:</H2>
+  </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
